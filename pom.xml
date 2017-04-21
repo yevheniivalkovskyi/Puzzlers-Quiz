@@ -7,6 +7,10 @@
     <groupId>com.training.skills</groupId>
     <artifactId>TrainingSkills</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <spring-framework.version>4.2.6.RELEASE</spring-framework.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -22,23 +26,67 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.reactivex.rxjava</groupId>
-            <artifactId>rxjava</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.2.6.RELEASE</version>
+            <version>${spring-framework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>4.2.6.RELEASE</version>
+            <version>${spring-framework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.2.6.RELEASE</version>
+            <version>${spring-framework.version}</version>
+        </dependency>
+        <!-- Spring and Transactions -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+        <!-- Logging with SLF4J & LogBack -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.20</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.7</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- Test Artifacts -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring-framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${spring-framework.version}</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>3.2.3.RELEASE</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>javax.jms</groupId>-->
+            <!--<artifactId>jms</artifactId>-->
+            <!--<version>1.1</version>-->
+        <!--</dependency>-->
+        <!--  mockrunner -->
+        <dependency>
+            <groupId>com.mockrunner</groupId>
+            <artifactId>mockrunner-jms</artifactId>
+            <version>1.0.3</version>
         </dependency>
 
 
