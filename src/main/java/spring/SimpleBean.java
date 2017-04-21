@@ -10,6 +10,14 @@ public class SimpleBean {
     private String name;
 
 
+    @Override
+    public String toString() {
+        return "SimpleBean{" +
+                "age=" + age +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
     public SimpleBean() {
     }
 

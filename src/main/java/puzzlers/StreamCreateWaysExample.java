@@ -25,7 +25,6 @@ public class StreamCreateWaysExample {
         Stream streamGenerated = Stream.generate(() -> "element").limit(10);
         streamGenerated.forEach(p -> System.out.println(p));
 
-
         //Fifth way
         Stream<?> iterate = Stream.iterate(10, n -> n * 2).limit(20); // n -> n+2 is UnaryOperator
         iterate.forEach(System.out::println);
